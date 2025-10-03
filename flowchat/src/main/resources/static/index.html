@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowChat</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- 页面内容容器 -->
+        <iframe id="page-content" src="login.html"></iframe>
+        
+        <!-- 独立的弹出框容器 -->
+        <div id="toast-container"></div>
+        
+        <!-- 加载提示 -->
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <div>加载中...</div>
+        </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
