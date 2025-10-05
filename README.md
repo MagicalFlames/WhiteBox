@@ -18,49 +18,46 @@ WhiteBox是一个基于Spring Boot开发的实时聊天应用，支持用户注�
 ```
 whitebox/
 ├── pom.xml                                    # Maven配置文件
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/whitebox/
-│   │   │   ├── WhiteBoxApplication.java       # 应用程序主入口
-│   │   │   ├── config/
-│   │   │   │   ├── SecurityConfig.java        # Spring Security安全配置
-│   │   │   │   └── WebSocketConfig.java       # WebSocket配置
-│   │   │   ├── controller/
-│   │   │   │   ├── FriendController.java      # 好友管理接口
-│   │   │   │   ├── MessageController.java     # 消息处理接口
-│   │   │   │   └── UserController.java        # 用户管理接口
-│   │   │   ├── entity/
-│   │   │   │   ├── FriendRequest.java         # 好友请求实体
-│   │   │   │   ├── Friendship.java            # 好友关系实体
-│   │   │   │   ├── Message.java               # 消息实体
-│   │   │   │   └── User.java                  # 用户实体
-│   │   │   └── repository/
-│   │   │       ├── FriendRequestRepository.java  # 好友请求数据访问
-│   │   │       ├── FriendshipRepository.java     # 好友关系数据访问
-│   │   │       ├── MessageRepository.java        # 消息数据访问
-│   │   │       └── UserRepository.java           # 用户数据访问
-│   │   └── resources/
-│   │       ├── application.properties         # 应用配置文件
-│   │       └── static/                        # 静态资源目录
-│   │           ├── index.html                 # 首页
-│   │           ├── login.html                 # 登录页面
-│   │           ├── register.html              # 注册页面
-│   │           ├── chat.html                  # 聊天页面
-│   │           ├── css/                       # 样式文件
-│   │           │   ├── index.css              # 首页样式
-│   │           │   ├── login.css              # 登录页面样式
-│   │           │   ├── register.css           # 注册页面样式
-│   │           │   └── chat.css               # 聊天页面样式
-│   │           └── js/                        # JavaScript文件
-│   │               ├── common.js              # 公共工具函数
-│   │               ├── index.js               # 首页脚本
-│   │               ├── login.js               # 登录页面脚本
-│   │               ├── register.js            # 注册页面脚本
-│   │               └── chat.js                # 聊天页面脚本
-│   └── test/
-│       └── java/com/example/whitebox/
-│           └── WhiteBoxApplicationTests.java  # 测试文件
-└── target/                                    # Maven构建输出目录
+└──src/
+    └── main/
+        ├── java/com/example/whitebox/
+        │   ├── WhiteBoxApplication.java       # 应用程序主入口
+        │   ├── config/
+        │   │   ├── SecurityConfig.java        # Spring Security安全配置
+        │   │   └── WebSocketConfig.java       # WebSocket配置
+        │   ├── controller/
+        │   │   ├── FriendController.java      # 好友管理接口
+        │   │   ├── MessageController.java     # 消息处理接口
+        │   │   └── UserController.java        # 用户管理接口
+        │   ├── entity/
+        │   │   ├── FriendRequest.java         # 好友请求实体
+        │   │   ├── Friendship.java            # 好友关系实体
+        │   │   ├── Message.java               # 消息实体
+        │   │   └── User.java                  # 用户实体
+        │   └── repository/
+        │       ├── FriendRequestRepository.java  # 好友请求数据访问
+        │       ├── FriendshipRepository.java     # 好友关系数据访问
+        │       ├── MessageRepository.java        # 消息数据访问
+        │       └── UserRepository.java           # 用户数据访问
+        └── resources/
+            ├── application.properties         # 应用配置文件
+            └── static/                        # 静态资源目录
+                ├── index.html                 # 首页
+                ├── login.html                 # 登录页面
+                ├── register.html              # 注册页面
+                ├── chat.html                  # 聊天页面
+                ├── css/                       # 样式文件
+                │   ├── index.css              # 首页样式
+                │   ├── login.css              # 登录页面样式
+                │   ├── register.css           # 注册页面样式
+                │   └── chat.css               # 聊天页面样式
+                └── js/                        # JavaScript文件
+                    ├── common.js              # 公共工具函数
+                    ├── index.js               # 首页脚本
+                    ├── login.js               # 登录页面脚本
+                    ├── register.js            # 注册页面脚本
+                    └── chat.js                # 聊天页面脚本
+
 ```
 
 ## 核心功能模块
