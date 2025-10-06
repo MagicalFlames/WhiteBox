@@ -1,4 +1,4 @@
-# WhiteBox - 小白盒聊天应用
+# WhiteBox
 
 ## 项目简介
 
